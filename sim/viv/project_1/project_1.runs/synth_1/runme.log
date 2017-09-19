@@ -1,0 +1,385 @@
+
+*** Running vivado
+    with args -log DATA_CONVERT.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source DATA_CONVERT.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source DATA_CONVERT.tcl -notrace
+Command: synth_design -top DATA_CONVERT -part xa7a15tcpg236-2I
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xa7a15t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xa7a15t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24339 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1158.047 ; gain = 125.086 ; free physical = 5072 ; free virtual = 19126
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'DATA_CONVERT' [/home/a/0class/matches/DATA_CONVERT/0.21/DATA_CONVERT.v:1]
+INFO: [Synth 8-638] synthesizing module 'READ' [/home/a/0class/matches/DATA_CONVERT/0.21/sim/ise/t201706301133/READ.v:1]
+INFO: [Synth 8-256] done synthesizing module 'READ' (1#1) [/home/a/0class/matches/DATA_CONVERT/0.21/sim/ise/t201706301133/READ.v:1]
+INFO: [Synth 8-638] synthesizing module 'OUT' [/home/a/0class/matches/DATA_CONVERT/0.21/OUT.v:1]
+INFO: [Synth 8-256] done synthesizing module 'OUT' (2#1) [/home/a/0class/matches/DATA_CONVERT/0.21/OUT.v:1]
+INFO: [Synth 8-638] synthesizing module 'CTRL' [/home/a/0class/matches/DATA_CONVERT/0.21/sim/ise/t201706301133/CTRL.v:1]
+WARNING: [Synth 8-567] referenced signal 'RSTN' should be on the sensitivity list [/home/a/0class/matches/DATA_CONVERT/0.21/sim/ise/t201706301133/CTRL.v:51]
+WARNING: [Synth 8-567] referenced signal 'mode' should be on the sensitivity list [/home/a/0class/matches/DATA_CONVERT/0.21/sim/ise/t201706301133/CTRL.v:51]
+WARNING: [Synth 8-4767] Trying to implement RAM 'mem1k0_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
+Reason is one or more of the following :
+	1: RAM has multiple writes via different ports in same process. If RAM inferencing intended, write to one port per process. 
+	2: Unable to determine number of words or word size in RAM. 
+	3: No valid read/write found for RAM. 
+RAM "mem1k0_reg" dissolved into registers
+INFO: [Synth 8-256] done synthesizing module 'CTRL' (3#1) [/home/a/0class/matches/DATA_CONVERT/0.21/sim/ise/t201706301133/CTRL.v:1]
+INFO: [Synth 8-256] done synthesizing module 'DATA_CONVERT' (4#1) [/home/a/0class/matches/DATA_CONVERT/0.21/DATA_CONVERT.v:1]
+WARNING: [Synth 8-3331] design CTRL has unconnected port CLK_48MHZ
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1268.516 ; gain = 235.555 ; free physical = 4960 ; free virtual = 19015
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1268.516 ; gain = 235.555 ; free physical = 4960 ; free virtual = 19015
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xa7a15tcpg236-2I
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1276.520 ; gain = 243.559 ; free physical = 4960 ; free virtual = 19015
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xa7a15tcpg236-2I
+INFO: [Synth 8-5546] ROM "bn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/a/0class/matches/DATA_CONVERT/0.21/sim/ise/t201706301133/CTRL.v:94]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/a/0class/matches/DATA_CONVERT/0.21/sim/ise/t201706301133/CTRL.v:117]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/a/0class/matches/DATA_CONVERT/0.21/sim/ise/t201706301133/CTRL.v:140]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/a/0class/matches/DATA_CONVERT/0.21/sim/ise/t201706301133/CTRL.v:163]
+INFO: [Synth 8-5546] ROM "tmp7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mode_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "o_DATA_A" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt3" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt5" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cnt8" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "VALID" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "VALID" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'CLK_OUT_reg' [/home/a/0class/matches/DATA_CONVERT/0.21/sim/ise/t201706301133/CTRL.v:60]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:37 ; elapsed = 00:00:34 . Memory (MB): peak = 1412.863 ; gain = 379.902 ; free physical = 4822 ; free virtual = 18878
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |CTRL__GB0         |           1|     27398|
+|2     |CTRL__GB1         |           1|     26525|
+|3     |CTRL__GB2         |           1|     30661|
+|4     |CTRL__GB3         |           1|      7964|
+|5     |CTRL__GB4         |           1|     27090|
+|6     |CTRL__GB5         |           1|     29999|
+|7     |CTRL__GB6         |           1|     29871|
+|8     |CTRL__GB7         |           1|     11504|
+|9     |CTRL__GB8         |           1|     17256|
+|10    |DATA_CONVERT__GC0 |           1|       339|
++------+------------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 19    
+	   2 Input      5 Bit       Adders := 7     
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 4     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input   5760 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 12    
+	   5 Input     10 Bit        Muxes := 1     
+	   5 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 26    
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module CTRL 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 18    
+	   2 Input      2 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input   5760 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 11    
+	   2 Input      8 Bit        Muxes := 26    
+	   4 Input      8 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 11    
+	   4 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module READ 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   5 Input      9 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+Module OUT__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module OUT__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module OUT 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 45 (col length:60)
+BRAMs: 50 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design DATA_CONVERT has unconnected port CLK_48MHZ
+INFO: [Synth 8-5546] ROM "tmp7" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mode_reg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "VALID" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:02:30 . Memory (MB): peak = 1607.258 ; gain = 574.297 ; free physical = 1611 ; free virtual = 15668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |CTRL__GB0         |           1|      5741|
+|2     |CTRL__GB1         |           1|      5633|
+|3     |CTRL__GB2         |           1|     35237|
+|4     |CTRL__GB3         |           1|       870|
+|5     |CTRL__GB4         |           1|      7546|
+|6     |CTRL__GB5         |           1|      6224|
+|7     |CTRL__GB6         |           1|     26965|
+|8     |CTRL__GB7         |           1|     11504|
+|9     |CTRL__GB8         |           1|     17256|
+|10    |DATA_CONVERT__GC0 |           1|       254|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:34 ; elapsed = 00:02:30 . Memory (MB): peak = 1607.258 ; gain = 574.297 ; free physical = 1611 ; free virtual = 15668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+------------------+------------+----------+
+|      |RTL Partition     |Replication |Instances |
++------+------------------+------------+----------+
+|1     |CTRL__GB0         |           1|      5741|
+|2     |CTRL__GB1         |           1|      5633|
+|3     |CTRL__GB2         |           1|     35237|
+|4     |CTRL__GB3         |           1|       870|
+|5     |CTRL__GB4         |           1|      7546|
+|6     |CTRL__GB5         |           1|      6224|
+|7     |CTRL__GB6         |           1|     26965|
+|8     |CTRL__GB7         |           1|     11504|
+|9     |CTRL__GB8         |           1|     17256|
+|10    |DATA_CONVERT__GC0 |           1|       254|
++------+------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:46 ; elapsed = 00:02:41 . Memory (MB): peak = 1622.184 ; gain = 589.223 ; free physical = 1604 ; free virtual = 15663
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |CTRL__GB2     |           1|     12282|
+|2     |CTRL__GB6     |           1|     13854|
+|3     |CTRL__GB7     |           1|      5328|
+|4     |CTRL__GB8     |           1|      7992|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:00 ; elapsed = 00:02:56 . Memory (MB): peak = 1622.184 ; gain = 589.223 ; free physical = 1603 ; free virtual = 15662
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:01 ; elapsed = 00:02:56 . Memory (MB): peak = 1622.184 ; gain = 589.223 ; free physical = 1603 ; free virtual = 15663
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:02 ; elapsed = 00:02:58 . Memory (MB): peak = 1622.184 ; gain = 589.223 ; free physical = 1603 ; free virtual = 15662
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:02 ; elapsed = 00:02:58 . Memory (MB): peak = 1622.184 ; gain = 589.223 ; free physical = 1603 ; free virtual = 15662
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:09 ; elapsed = 00:03:04 . Memory (MB): peak = 1622.184 ; gain = 589.223 ; free physical = 1604 ; free virtual = 15663
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:09 ; elapsed = 00:03:04 . Memory (MB): peak = 1622.184 ; gain = 589.223 ; free physical = 1604 ; free virtual = 15663
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    12|
+|3     |LUT1   |    28|
+|4     |LUT2   |   223|
+|5     |LUT3   |  4149|
+|6     |LUT4   |   328|
+|7     |LUT5   |  8440|
+|8     |LUT6   | 23397|
+|9     |MUXF7  |  6643|
+|10    |MUXF8  |  3016|
+|11    |FDCE   |    50|
+|12    |FDPE   |    14|
+|13    |FDRE   |  5874|
+|14    |FDSE   |    31|
+|15    |LD     |     1|
+|16    |IBUF   |     5|
+|17    |OBUF   |     5|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       | 52218|
+|2     |  c1     |CTRL   | 35811|
+|3     |  i1     |READ   | 16351|
+|4     |  oa     |OUT    |    14|
+|5     |  ob     |OUT_0  |    15|
+|6     |  oc     |OUT_1  |    15|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:09 ; elapsed = 00:03:04 . Memory (MB): peak = 1622.184 ; gain = 589.223 ; free physical = 1604 ; free virtual = 15663
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:07 ; elapsed = 00:03:05 . Memory (MB): peak = 1622.184 ; gain = 509.133 ; free physical = 4645 ; free virtual = 18705
+Synthesis Optimization Complete : Time (s): cpu = 00:02:09 ; elapsed = 00:03:07 . Memory (MB): peak = 1622.184 ; gain = 589.223 ; free physical = 4649 ; free virtual = 18705
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  LD => LDCE: 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:17 ; elapsed = 00:03:14 . Memory (MB): peak = 1664.945 ; gain = 564.480 ; free physical = 4650 ; free virtual = 18705
+INFO: [Common 17-1381] The checkpoint '/home/a/0class/matches/DATA_CONVERT/0.21/sim/viv/project_1/project_1.runs/synth_1/DATA_CONVERT.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1688.957 ; gain = 24.012 ; free physical = 4643 ; free virtual = 18704
+report_utilization: Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.19 . Memory (MB): peak = 1688.957 ; gain = 0.000 ; free physical = 4643 ; free virtual = 18704
+INFO: [Common 17-206] Exiting Vivado at Thu Jul 27 20:13:43 2017...

@@ -1,0 +1,81 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/home/a/ISE/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3 -s 3 -n
+3 -fastpaths -xml DATA_CONVERT.twx DATA_CONVERT.ncd -o DATA_CONVERT.twr
+DATA_CONVERT.pcf
+
+Design file:              DATA_CONVERT.ncd
+Physical constraint file: DATA_CONVERT.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock CLK_30MHZ
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+DIN         |   -0.466(F)|      FAST  |    2.445(F)|      SLOW  |CLK_30MHZ_BUFGP   |   0.000|
+MODE<0>     |   -0.606(F)|      FAST  |    2.638(F)|      SLOW  |CLK_30MHZ_BUFGP   |   0.000|
+MODE<1>     |   -0.576(F)|      FAST  |    2.564(F)|      SLOW  |CLK_30MHZ_BUFGP   |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock RSTN to Pad
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                           | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)          | Phase  |
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+CLK_OUT     |         8.444(F)|      SLOW  |         3.490(F)|      FAST  |c1/GND_4_o_tmp3[1]_MUX_71_o|   0.000|
+------------+-----------------+------------+-----------------+------------+---------------------------+--------+
+
+Clock to Setup on destination clock CLK_30MHZ
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK_30MHZ      |         |         |         |    6.729|
+RSTN           |         |         |    0.567|    0.567|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock RSTN
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+RSTN           |         |         |         |    0.712|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Fri Jun 30 16:20:50 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 979 MB
+
+
+

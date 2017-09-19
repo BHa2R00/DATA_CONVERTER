@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.xst" -ofn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.syr" 
+xst -intstyle ise -ifn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.xst" -ofn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.syr" 
+xst -intstyle ise -ifn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.xst" -ofn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.syr" 
+xst -intstyle ise -ifn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.xst" -ofn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.syr" 
+xst -intstyle ise -ifn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.xst" -ofn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.syr" 
+xst -intstyle ise -ifn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.xst" -ofn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.syr" 
+xst -intstyle ise -ifn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.xst" -ofn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-tq144-5 DATA_CONVERT.ngc DATA_CONVERT.ngd  
+map -intstyle ise -p xc3s50-tq144-5 -cm area -ir off -pr off -c 100 -o DATA_CONVERT_map.ncd DATA_CONVERT.ngd DATA_CONVERT.pcf 
+xst -intstyle ise -ifn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.xst" -ofn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.syr" 
+xst -intstyle ise -ifn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.xst" -ofn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s50-tq144-5 DATA_CONVERT.ngc DATA_CONVERT.ngd  
+map -intstyle ise -p xc3s50-tq144-5 -cm area -ir off -pr off -c 100 -o DATA_CONVERT_map.ncd DATA_CONVERT.ngd DATA_CONVERT.pcf 
+xst -intstyle ise -ifn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.xst" -ofn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 DATA_CONVERT.ngc DATA_CONVERT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DATA_CONVERT_map.ncd DATA_CONVERT.ngd DATA_CONVERT.pcf 
+par -w -intstyle ise -ol high -mt off DATA_CONVERT_map.ncd DATA_CONVERT.ncd DATA_CONVERT.pcf 
+xst -intstyle ise -ifn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.xst" -ofn "/home/ftp/0.21/sim/ise/t201706301133/DATA_CONVERT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 DATA_CONVERT.ngc DATA_CONVERT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DATA_CONVERT_map.ncd DATA_CONVERT.ngd DATA_CONVERT.pcf 
+par -w -intstyle ise -ol high -mt off DATA_CONVERT_map.ncd DATA_CONVERT.ncd DATA_CONVERT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DATA_CONVERT.twx DATA_CONVERT.ncd -o DATA_CONVERT.twr DATA_CONVERT.pcf 

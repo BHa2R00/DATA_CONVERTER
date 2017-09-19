@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Thu Jul 27 20:13:44 2017
+# Process ID: 25682
+# Current directory: /home/a/0class/matches/DATA_CONVERT/0.21/sim/viv/project_1/project_1.runs/impl_1
+# Command line: vivado -log DATA_CONVERT.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source DATA_CONVERT.tcl -notrace
+# Log file: /home/a/0class/matches/DATA_CONVERT/0.21/sim/viv/project_1/project_1.runs/impl_1/DATA_CONVERT.vdi
+# Journal file: /home/a/0class/matches/DATA_CONVERT/0.21/sim/viv/project_1/project_1.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source DATA_CONVERT.tcl -notrace

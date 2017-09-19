@@ -1,0 +1,4 @@
+verilog work "READ.v"
+verilog work "CTRL.v"
+verilog work "../../../OUT.v"
+verilog work "../../../DATA_CONVERT.v"

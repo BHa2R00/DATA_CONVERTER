@@ -1,0 +1,84 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
+| Date         : Thu Jul 27 21:04:32 2017
+| Host         : T175.BHa2R.NET running 64-bit unknown
+| Command      : report_control_sets -verbose -file DATA_CONVERT_control_sets_placed.rpt
+| Design       : DATA_CONVERT
+| Device       : xa7z030
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    17 |
+| Unused register locations in slices containing registers |    78 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            5778 |         3842 |
+| No           | No                    | Yes                    |               2 |            2 |
+| No           | Yes                   | No                     |              32 |           17 |
+| Yes          | No                    | No                     |              58 |           51 |
+| Yes          | No                    | Yes                    |              62 |           36 |
+| Yes          | Yes                   | No                     |              38 |           28 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+--------------------+----------------------+------------------+----------------+
+|       Clock Signal      |    Enable Signal   |   Set/Reset Signal   | Slice Load Count | Bel Load Count |
++-------------------------+--------------------+----------------------+------------------+----------------+
+|  c1/CLK_OUT_reg_i_2_n_0 |                    |                      |                1 |              1 |
+|  CLK_OUT_OBUF_BUFG      |                    | c1/tmp7              |                2 |              2 |
+|  CLK_OUT_OBUF_BUFG      |                    | oa/cnt[4]_i_1__0_n_0 |                1 |              5 |
+|  CLK_OUT_OBUF_BUFG      |                    | ob/cnt[4]_i_1__1_n_0 |                2 |              5 |
+|  CLK_OUT_OBUF_BUFG      |                    | oc/cnt[4]_i_1__2_n_0 |                1 |              5 |
+| ~CLK_30MHZ_IBUF_BUFG    | i1/bn              | i1/cnt[4]_i_1_n_0    |                1 |              5 |
+| ~CLK_30MHZ_IBUF_BUFG    | i1/ADDR[8]_i_2_n_0 | i1/ADDR[8]_i_1_n_0   |                4 |              5 |
+|  CLK_OUT_OBUF_BUFG      |                    | i1/buff_reg[0]_0     |                5 |              6 |
+|  CLK_OUT_OBUF_BUFG      | c1/cnt3[9]_i_1_n_0 | c1/tmp7              |                5 |              9 |
+|  CLK_OUT_OBUF_BUFG      | c1/cnt1[9]_i_1_n_0 | c1/tmp7              |                3 |              9 |
+|  CLK_OUT_OBUF_BUFG      | c1/cnt5[9]_i_1_n_0 | c1/tmp7              |                4 |             10 |
+|  CLK_OUT_OBUF_BUFG      | c1/cnt8[9]_i_1_n_0 | c1/tmp7              |                4 |             10 |
+| ~CLK_30MHZ_IBUF_BUFG    |                    | i1/buff_reg[0]_0     |                8 |             11 |
+|  CLK_OUT_OBUF_BUFG      | ob/E[0]            | c1/tmp7              |               20 |             24 |
+| ~CLK_30MHZ_IBUF_BUFG    | i1/ADDR[9]_i_2_n_0 | i1/buff_reg[0]_0     |               23 |             28 |
+| ~CLK_30MHZ_IBUF_BUFG    | i1/DATA[7]_i_1_n_0 |                      |               51 |             58 |
+| ~CLK_30MHZ_IBUF_BUFG    |                    |                      |             3841 |           5777 |
++-------------------------+--------------------+----------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     1 |
+| 5      |                     5 |
+| 6      |                     1 |
+| 9      |                     2 |
+| 10     |                     2 |
+| 11     |                     1 |
+| 16+    |                     4 |
++--------+-----------------------+
+
+
